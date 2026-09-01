@@ -1,3 +1,8 @@
+#This is a simple calculator program that asks for two numbers and performs the simple
+#operations of addition, subtraction, multiplication, and division on them. 
+#It also checks for division by zero and will print an error message if the second number is zero.
+#Created by David Johnson on September 1 2026
+
 print("This is a simple calculator program.")
 print("You will be asked for two numbers, and then what operation you want to do.")
 

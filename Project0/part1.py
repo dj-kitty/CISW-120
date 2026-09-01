@@ -1,3 +1,8 @@
+#This simple program asks for the user's first and last name and age,
+#and then estimates their birth year based on the current year and their age.
+#Then it asks for the user to comfirm the estimated birth year, and corrects it if necessary.
+#Created by David Johnson on September 1 2026
+
 firstName = input("What is your first name? ")
 lastName = input("What is your last name? ")
 fullName = firstName + " " + lastName #concatenation of first and last name
