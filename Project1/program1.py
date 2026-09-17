@@ -1,8 +1,11 @@
-firstName = input("What is your first name? ")#input for first name
-lastName = input("What is your last name? ")#input for last name
+#This program asks the user for their first and last name, and then makes the initials and gets the length of the names
+#Created by David Johnson for Intro to Programming
 
-firstInitial = firstName[0]#creating first initial from the first name
-secondInitial = lastName[0]#creating second initial from the last name
+firstName = input("What is your first name? ") #input for first name
+lastName = input("What is your last name? ") #input for last name
+
+firstInitial = firstName[0] #creating first initial from the first name
+secondInitial = lastName[0] #creating second initial from the last name
 
 print(f"Hello, {firstName} {lastName}.")
 print(f"Your first name is {len(firstName)} letters long, and your last name is {len(lastName)} letters long.")
