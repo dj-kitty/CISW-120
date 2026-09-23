@@ -1,4 +1,4 @@
-signalColor=input("What color is the traffic light? ").lower()
+signalColor = input("What color is the traffic light? ").lower()
 isBlinking = input("Is the light blinking? ").lower()
 if signalColor == "red":
     if isBlinking == "yes":
