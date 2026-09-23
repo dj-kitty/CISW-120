@@ -1,5 +1,5 @@
 # Intro to Programming
-# Debug Exercise 2
+# Debug Exercise 2, debugged by David Johnson
 
 # This program should add three numbers together.
 
