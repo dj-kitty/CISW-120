@@ -8,7 +8,8 @@
 
 user_val = int(input("Enter a whole number. > "))
 
-# Part 1: Discover why this condition doesn't work and fix it.   For this I changed the numbers from strings to ints
+# Part 1: Discover why this condition doesn't work and fix it. 
+#  For this I changed the numbers from strings to ints
 # Part 2: (Don't do this until part 1 is done)
 #         We're testing the same variable twice, to make sure it falls
 #         between a range of values. Rewrite the condition to make this simpler.

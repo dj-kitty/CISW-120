@@ -1,8 +1,11 @@
+#This is a simple program that applies tax to a price based off where the user lives, and then applies discounts
+#Created by David Johnson for Intro to programming
+
 price = float(input("What is the total price of the item(s) you are buying? "))
 print("What state are you in? (Enter the two-letter abbreviation, e.g., 'CA' for California). ")
 state = input("If you live in the District of Columbia, enter 'DC', and if you live in Puerto Rico, enter 'PR': ").upper()
 
-if state == "AL": #determining the tax rate based on the state entered by the user
+if state == "AL": #determining the tax rate based on the state entered by the user, taken from Wikipedia
     taxRate = 0.04
 elif state == "AK":
     taxRate = 0.00
