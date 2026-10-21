@@ -13,7 +13,7 @@ greet_user(name)
 
 def function_calc(num1, num2):
     operation = input("What operation would you like to perform? (+, -, *, /) ")
-
+ #operations
     if operation == "+":
         result = num1 + num2
         print(result)
@@ -47,7 +47,7 @@ function_calc(num1, num2)
 #Task 3
 
 def get_length(text):
-    num_of_chars = len(text)
+    num_of_chars = len(text) #get length of text
     return num_of_chars
 
 data = input("Please input some text: ")
