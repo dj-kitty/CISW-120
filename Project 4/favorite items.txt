@@ -1,0 +1,5 @@
+David's favorite items:
+favorite car: black 2017 Chevrolet Camaro
+favorite food: ice crea
+favorite color: black
+favorite animal: cat
