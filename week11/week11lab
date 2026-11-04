@@ -1,0 +1,75 @@
+# #                Part1: Lists
+
+# cart = ["Apples", "Meat", "Bread"]
+# print(len(cart))
+# print(cart[0])
+# print(cart[1])
+# print(cart[2])
+# cart.append("Cheese")
+# cart.insert(1, "Pineapple")
+
+# print(cart.count("Apples"))
+# cart.remove("Meat")
+
+# #outcome before sort: ['Apples', 'Pineapple', 'Bread', 'Cheese']
+# cart.sort()
+# #Outcome after sort: ['Apples', 'Bread', 'Cheese', 'Pineapple']
+
+# cart.reverse()
+# #new cart value: ['Pineapple', 'Cheese', 'Bread', 'Apples']
+
+
+
+
+
+#            Part 2: Dictionaries
+
+# shoppingList = {
+#     "Apples": 10,
+#     "Cookies": 50,
+#     "Strawberries": 100,
+#     "Pizzas": 4,
+#     "Candy Bags": 15
+# }
+
+# print(shoppingList["Cookies"])
+# shoppingList["Pizzas"] = 5
+# shoppingList["Cookies"] -= 25
+
+# print(shoppingList.keys())
+# print(shoppingList.values())
+
+# for item in shoppingList.keys():
+#     print(item)
+
+# for count in shoppingList.values():
+#     print(count)
+
+# for item, count in shoppingList.items():
+#     print(f"{count} {item}")
+
+
+CustomerStats = {
+
+    1: {"Name": "Bob", 
+    "Items Bought": ["Oranges", "Pineapple", "Cake"],
+    "Total Spent": 21.92},
+
+    2: {"Name": "Jeremy", 
+    "Items Bought": ["Bananas", "Cucumber", "Croissant"],
+    "Total Spent": 24.68}
+
+}
+
+print(CustomerStats[1]["Items Bought"])
+
+
+
+
+
+#                  Part 3: Reflection
+
+#I learned how to use dictionaries. These are far easier to use than what I believe are the Java equivalent. 
+#It is definitely useful that you can store lists and dictionaries inside of each other
+#One thing I may do in probably the final is storing stuff in lists and dictionaries and then writing them in a file. I would get a bunch of information first,
+#and then make a function to turn that list in to data to store in a file.
