@@ -1,0 +1,90 @@
+#This program starts out with an already made shopping list divided by item type. The user ahs options to view the categories,
+#view what is in the category, add/remove items from a category, or view the entire list.
+#Created by David Johnson for Intro to Programming
+
+
+
+typesShoppingList = { #the list
+
+    "Fruits": ["Apple", "Banana", "Orange", "Grapes", "Mango"],
+    "Vegetables": ["Carrot", "Broccoli", "Spinach", "Potato", "Tomato"],
+    "Dairy": ["Milk", "Cheese", "Yogurt", "Butter"],
+    "Meat": ["Chicken", "Beef", "Pork"],
+    "Grains": ["Rice", "Pasta", "Bread", "Oats"],
+    "Cleaning Supplies": ["Detergent", "Soap", "Bleach", "Disinfectant"],
+    "Miscellaneous": ["Batteries", "Light Bulbs", "Toilet Paper", "Paper Towels"]
+
+}
+
+def printShoppingList(category): #view the items in a category
+    items = typesShoppingList.get(category, [])
+    if items:
+        print(f"{category}:")
+        for item in items:
+            print(f"  - {item}") #organizational part, nice formatting
+    else:
+        print(f"No items found for category: {category}")#if category is empty
+
+def addItemToCategory(category, item):
+    if category in typesShoppingList:
+        typesShoppingList[category].append(item)
+        print(f"{item} added to {category}.")
+    else:
+        print(f"Category {category} does not exist.")
+
+def removeItemFromCategory(category, item):
+    if category in typesShoppingList:
+        if item in typesShoppingList[category]:
+            typesShoppingList[category].remove(item)
+            print(f"{item} removed from {category}.")
+        else:
+            print(f"{item} not found in {category}.")
+    else:
+        print(f"Category {category} does not exist.")
+
+def viewAllCategories():
+    print("Shopping List Categories:")
+    for category in typesShoppingList.keys(): #use the keys() method to get the category names
+        print(f"- {category}")
+
+def viewShoppingList():
+    for category, items in typesShoppingList.items():
+        print(f"{category}:")
+        for item in items:
+            print(f"  - {item}")        
+
+def run():
+
+    while True:
+        print("Options:")
+        print("1. View shopping list by category")
+        print("2. Add item to category")
+        print("3. Remove item from category")
+        print("4. View all categories")
+        print("5. View entire shopping list")
+        print("6. Exit")
+
+        choice = input("Enter your choice (1-6): ")
+
+        if choice == '1':
+            category = input("Enter the category to view: ")
+            printShoppingList(category)
+        elif choice == '2':
+            category = input("Enter the category to add an item to: ")
+            item = input("Enter the item to add: ")
+            addItemToCategory(category, item)
+        elif choice == '3':
+            category = input("Enter the category to remove an item from: ")
+            item = input("Enter the item to remove: ")
+            removeItemFromCategory(category, item)
+        elif choice == '4':
+            viewAllCategories()
+        elif choice == '5':
+            viewShoppingList()
+        elif choice == '6':
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+run()
